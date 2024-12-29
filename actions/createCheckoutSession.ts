@@ -42,11 +42,11 @@ export async function createCheckoutSession(
 		}
 
 		const baseUrl = process.env.NODE_ENV === 'production' && process.env.VERCEL_URL 
-			? `https://${process.env.VERCEL_URL}/success` 
-			: `${process.env.NEXT_PUBLIC_BASE_URL}/success`;
+			? `https://${process.env.VERCEL_URL}`
+			: process.env.NEXT_PUBLIC_BASE_URL;
 
-		const successUrl = `${baseUrl}?session_id={CHECKOUT_SESSION_ID}&orderNumber=${metadata.orderNumber}`;
-		const cancelUrl = `${baseUrl.replace('/success', '')}/basket`;
+		const successUrl = `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}&orderNumber=${metadata.orderNumber}`;
+		const cancelUrl = `${baseUrl}/basket`;
 
 		console.log("SUCCESS URL <<<<<<<", successUrl);
 
