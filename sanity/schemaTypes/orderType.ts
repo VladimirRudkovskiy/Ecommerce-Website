@@ -90,7 +90,7 @@ export const orderType = defineType({
 		defineField({
 			name: "totalPrice",
 			title: "Total Price",
-			type: "number",
+			type: "string",
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({

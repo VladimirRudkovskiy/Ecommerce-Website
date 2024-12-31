@@ -56,14 +56,14 @@ function SuccessPage() {
 								</span>
 							</p>
 						)}
-						{/* {session_id && (
+						{session_id && (
 							<p className="text-gray-600 flex justify-between">
 								<span>Transaction ID:</span>
 								<span className="font-mono text-sm">
 									{session_id}
 								</span>
 							</p>
-						)} */}
+						)}
 					</div>
 				</div>
 
