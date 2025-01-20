@@ -4,8 +4,8 @@ import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import { SanityLive } from "@/sanity/lib/live";
-//import { DisableDraftMode } from "@/components/DisableDraftMode";
-import { VisualEditing } from "next-sanity";
+// import { DisableDraftMode } from "@/components/DisableDraftMode";
+// import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 
 
@@ -35,8 +35,8 @@ export default async function RootLayout({
      <body>
 			{(await draftMode()).isEnabled && (
 				<>
-					{/* <DisableDraftMode /> */}
-					{/* <VisualEditing /> */}
+					{/* <DisableDraftMode />
+					<VisualEditing /> */}
 				</>
 			)}
 			<main>

@@ -283,6 +283,7 @@ export declare const internalGroqTypeReferenceTo: unique symbol;
 // Variable: MY_ORDERS_QUERY
 // Query: *[_type == "order" && clerkUserId == $userId] | order(orderDate desc) {			...,			products[]{				...,				product->			}		}
 export type MY_ORDERS_QUERYResult = Array<{
+	currency:string;
   _id: string;
   _type: "order";
   _createdAt: string;
